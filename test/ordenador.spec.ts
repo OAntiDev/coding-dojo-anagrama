@@ -7,7 +7,7 @@ describe("Ordenador", () => {
     });
 
     it(`ascendente deve lançar um erro 'Não somos palhaços para ordenar palavras de apenas 1 digito'`, async () => {  
-        let functionCreateWithError = ()=>{Ordenador.descendente("p")};    
+        let functionCreateWithError = ()=>{Ordenador.ascendente("p")};    
         expect(functionCreateWithError).toThrow('Não somos palhaços para ordenar palavras de apenas 1 digito');
     });
 
