@@ -3,7 +3,7 @@ import {Ordenador}  from "../src/ordenador"
 describe("Ordenador", () => {
 
     it(`ascendente deve retornar a palavra ordenada de forma ascendente'`, async () => {    
-        expect(Ordenador.ascendente("palavra")).toBe("aalprv");
+        expect(Ordenador.ascendente("palavra")).toBe("aaalprv");
     });
 
     it(`ascendente deve lançar um erro 'Não somos palhaços para ordenar palavras de apenas 1 digito'`, async () => {  
