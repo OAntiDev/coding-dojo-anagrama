@@ -20,4 +20,12 @@ describe("Ordenador", () => {
         expect(functionCreateWithError).toThrow('Não somos palhaços para ordenar palavras de apenas 1 digito');
     });
 
+    it(`ascedente deve ordenar removendo os espaços`, async () => {  
+        expect(Ordenador.ascendente("papo reto")).toBe('aeoopprt');
+    });
+
+    it(`descedente deve ordenar removendo os espaços`, async () => {  
+        expect(Ordenador.descendente("papo reto")).toBe('trppooea');
+    });
+
 });
