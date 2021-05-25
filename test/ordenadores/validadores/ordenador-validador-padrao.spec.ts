@@ -1,5 +1,4 @@
 import { OrdenadorValidadorPadrao } from "../../../src/ordenadores/validadores/ordenador-validador-padrao";
-import { Ordenador } from "../../../src/ordenadores/ordenador";
 import { OrdenadorValidador } from "../../../src/ordenadores/validadores/ordenador-validador";
 
 describe("OrdenadorValidadorPadrao", () => {
