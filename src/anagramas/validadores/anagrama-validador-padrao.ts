@@ -1,16 +1,7 @@
-import { Ordenador } from "./ordenador";
+import { AnagramaValidador } from "./anagrama-validador";
 
-export class Anagrama{
-
-    static validarSeEhAnagrama(palavra1: string, palavra2: string): any{
-
-        this.validarParametros(palavra1, palavra2);
-
-        return Ordenador.ascendente(palavra1) == Ordenador.ascendente(palavra2);
-    };
-
-    static validarParametros(palavra1: string, palavra2: string){
-
+export class AnagramaValidadorPadrao extends AnagramaValidador{
+    public validar(palavra1, palavra2){
         if(palavra1 == null || palavra1.trim() === ""){
             throw 'Parametro 1 inválido, pois está vazio ou nulo'
         }
